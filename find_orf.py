@@ -197,7 +197,7 @@ def find_first_orf(sequence,
     # Read the docstring above for additional clues.
     start_str='|'.join(starts)
     stop_str = '|'.join(stops)
-    orf_pattern_str = r'(' + start_str + ')([AUCG]{3})*('+ stop_str + ')'
+    orf_pattern_str = r'(' + start_str + r')([AUCG]{3})*('+ stop_str + r')'
     ##########################################################################
 
     # Create the regular expression object
